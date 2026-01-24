@@ -1,4 +1,3 @@
-
 """
 cron: 0 */6 * * *
 new Env("Linux.Do 签到")
@@ -292,7 +291,7 @@ class LinuxDoBrowser:
         print(tabulate(info, headers=["项目", "当前", "要求"], tablefmt="pretty"))
 
     def send_notifications(self, browse_enabled):
-        status_msg = "✅每日登录成功: {USERNAME}"
+        status_msg = f"✅每日登录成功: {USERNAME}"
         if browse_enabled:
             status_msg += " + 浏览任务完成"
 
